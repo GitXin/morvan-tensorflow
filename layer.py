@@ -47,3 +47,5 @@ with tf.Session() as sess:
       predication_value = sess.run(predication, feed_dict = { xs: x_data, ys: y_data })
       lines = ax.plot(x_data, predication_value, 'r-', lw = 5)
       plt.pause(0.1)
+
+plt.pause(0)
